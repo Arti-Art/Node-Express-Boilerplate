@@ -1,5 +1,45 @@
-body {
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* optional margin and padding */
   margin: 0;
   padding: 0;
+  /* Will reset all fonts on headings etc */
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+/* Typography */
+body {
   font-family: sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  margin-top: 1.5rem;
 }
